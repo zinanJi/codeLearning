@@ -1,0 +1,22 @@
+// Object类中包含了通知与等待系列的函数
+1. wait()函数
+1）调用效果：一个被作为共享变量的Object类a实例，当一个线程调用a.wait()时，该调用线程会被阻塞挂起，直到发生以下两种情况才会返回：
+①其他线程调用了a的notify()方法或者notifyAll()方法。
+②其他线程调用了该线程的interrupt()方法，该线程抛出一个InterruptedException异常
+2）调用a.wait()方法的线程如果没有事先获得该对象a的监视器锁,则线程会抛出IllegalMonitorStateException，那么如何得到呢？
+①线程run方法中执行synchronized同步代码块的时候，使用该共享变量作为参数：
+synchronized(a){
+    // doSomething
+}
+②线程run方法中调用该共享变量中用synchronized修饰的方法
+synchronized void method(int a){
+    // doSomething
+}
+3)使用wait要注意虚假唤醒：即使没有被其他线程调用notify或notifyAll通知，或者被中断，或者等待超时，一个线程也可以从挂起状态变为可运行状态
+所以设置一个循环条件来不停wait()
+synchronized(obj) {
+    while(条件不满足){
+        obj.wait();
+    }
+}
+
