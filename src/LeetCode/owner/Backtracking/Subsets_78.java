@@ -23,6 +23,14 @@ public class Subsets_78 {
         // tempList是选择的路径，把满足结束条件的路径添加到结果中
         list.add(new ArrayList<>(tempList));
         // 回溯算法的核心
+        // for 选择 in 选择列表:
+        //     做选择
+        //     将该选择从选择列表移除
+        //     路径.add(选择)
+        //     backtrack(路径, 选择列表)
+        //     撤销选择
+        //     路径.remove(选择)
+        //     将该选择再加入选择列表
         for (int i = start; i < nums.length; i++) {
             // 在递归之前做选择
             tempList.add(nums[i]);
