@@ -1,10 +1,12 @@
-package LeetCode;
+package LeetCode.owner.Tree.simple;
+
+import LeetCode.TreeNode;
 
 /**
  * Created by zinan.ji on 2020-03-27.
  * 100. 相同的树
  */
-public class IsSameTree {
+public class IsSameTree_100 {
     // 先序遍历递归
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // 访问根结点

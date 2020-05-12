@@ -1,12 +1,12 @@
-package LeetCode.Tree;
+package LeetCode.owner.Tree.simple;
 
-import LeetCode.TreeNode;
+import LeetCode.owner.Tree.TreeNode;
 
 /**
  * Created by zinan.ji on 2020-04-12.
  * 404. 左叶子之和
  */
-public class SumOfLeftLeaves404 {
+public class SumOfLeftLeaves_404 {
     public int sumOfLeftLeaves(TreeNode root) {
         int sum = dfs(root,false);
         return sum;

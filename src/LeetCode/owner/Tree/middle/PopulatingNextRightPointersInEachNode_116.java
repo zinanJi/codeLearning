@@ -1,9 +1,9 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PopulatingNextRightPointersInEachNode {
+public class PopulatingNextRightPointersInEachNode_116 {
     class Node {
         public int val;
         public Node left;

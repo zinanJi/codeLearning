@@ -1,22 +1,15 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
+
+import LeetCode.owner.Tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by zinan.ji on 2020-03-25.
+ * 95. 不同的二叉搜索树 II
  */
-public class GenerateTrees {
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
+public class GenerateTrees_95 {
 
     public List<TreeNode> generateTrees(int n) {
         List<TreeNode> ans = new ArrayList<TreeNode>();
@@ -32,8 +25,7 @@ public class GenerateTrees {
             ans.add(null);
             return ans;
         }
-
-
+        
         for (int i = start; i <= end; i++) {
             // 递归得到i的所有可能的左子树集合
             List<TreeNode> leftTree = generate(start, i - 1);
@@ -48,8 +40,6 @@ public class GenerateTrees {
                     ans.add(root);
                 }
             }
-
-
         }
         return ans;
     }

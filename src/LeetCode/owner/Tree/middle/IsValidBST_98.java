@@ -1,10 +1,12 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
+
+import LeetCode.TreeNode;
 
 /**
  * Created by zinan.ji on 2020-03-26.
  * 98. 验证二叉搜索树
  */
-public class IsValidBST {
+public class IsValidBST_98 {
     // 二叉搜索树的性质是，
     // 节点的左子树只包含小于当前节点的数。
     // 节点的右子树只包含大于当前节点的数。

@@ -1,10 +1,10 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
 
 /**
  * Created by zinan.ji on 2020-03-25.
  * 96. 不同的二叉搜索树
  */
-public class NumTrees {
+public class NumTrees_96 {
     /*
         用递归的思想，求出卡塔兰数
      */

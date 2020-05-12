@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
+
+import LeetCode.owner.Tree.TreeNode;
 
 import java.util.*;
 
@@ -6,7 +8,7 @@ import java.util.*;
  * Created by zinan.ji on 2020-03-26.
  * 103. 二叉树的锯齿形层次遍历
  */
-public class ZigzagLevelOrder {
+public class ZigzagLevelOrder_103 {
     // 层次遍历的变种
     private int depth = 0;
 

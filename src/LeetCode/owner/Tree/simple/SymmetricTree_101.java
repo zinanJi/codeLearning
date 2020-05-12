@@ -1,11 +1,13 @@
-package LeetCode;
+package LeetCode.owner.Tree.simple;
+
+import LeetCode.owner.Tree.TreeNode;
 
 import java.util.Stack;
 /**
  * Created by zinan.ji on 2020-03-26.
  * 101. 对称二叉树
  */
-public class SymmetricTree {
+public class SymmetricTree_101 {
 
     // 可以运用递归和迭代两种方法解决这个问题
     // 递归版

@@ -1,9 +1,11 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
+
+import LeetCode.owner.Tree.TreeNode;
 
 /**
  * Created by zinan.ji on 2020-03-28.
  */
-public class BuildTreeByPreOrderAndInOrder {
+public class BuildTreeByPreOrderAndInOrder_105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || preorder.length == 0 || inorder == null || inorder.length == 0 || preorder.length != inorder.length) {
             return null;
@@ -29,6 +31,4 @@ public class BuildTreeByPreOrderAndInOrder {
         treeNode.right = help(preorder,pStart+index+1,pEnd,inorder,iStart+index+1,iEnd);
         return treeNode;
     }
-
-
 }

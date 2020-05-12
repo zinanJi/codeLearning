@@ -1,4 +1,4 @@
-package LeetCode.HOT100.linkedlist;
+package LeetCode.owner.LinkedList;
 
 /**
  * Created by zinan.ji on 2020-04-13.

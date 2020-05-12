@@ -1,12 +1,15 @@
-package LeetCode;
+package LeetCode.owner.Tree.difficult;
+
+import LeetCode.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by zinan.ji on 2020-03-27.
+ * 99. 恢复二叉搜索树
  */
-public class RecoverTree {
+public class RecoverTree_99 {
     // BST 的中序遍历是升序序列
     public void recoverTree(TreeNode root) {
 

@@ -1,4 +1,4 @@
-package LeetCode.Greedy;
+package LeetCode.owner.Greedy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,10 @@
-package LeetCode;
+package LeetCode.owner.Tree.middle;
 
-public class Intersect {
+/**
+ * Created by zinan.ji on 2020-03-28.
+ * 558. 四叉树交集
+ */
+public class Intersect_558 {
     class Node {
         public boolean val;
         public boolean isLeaf;
