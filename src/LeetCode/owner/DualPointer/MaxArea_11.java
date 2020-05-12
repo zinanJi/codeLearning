@@ -1,4 +1,4 @@
-package LeetCode.owner.dualPointer;
+package LeetCode.owner.DualPointer;
 
 /**
  * Created by zinan.ji on 2020-05-11.

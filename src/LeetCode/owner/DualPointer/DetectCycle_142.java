@@ -1,4 +1,4 @@
-package LeetCode.owner.dualPointer;
+package LeetCode.owner.DualPointer;
 
 import LeetCode.owner.LinkedList.ListNode;
 
